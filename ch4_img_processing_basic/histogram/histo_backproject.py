@@ -33,3 +33,4 @@ def backProject_manual(hist_roi):
     h, s, v = cv2.split(hsv_img)
     bp = hist_rate[h.ravel(), s.ravel()]
     bp = np.minimum(bp, 1)
+
